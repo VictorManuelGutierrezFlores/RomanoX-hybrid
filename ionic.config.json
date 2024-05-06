@@ -1,0 +1,7 @@
+{
+  "name": "RomanoX-hybrid",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

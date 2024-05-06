@@ -14,4 +14,14 @@
   </ion-header>
 
   <app-explore-container name="Tab 2 page"></app-explore-container>
+
+  <form [formGroup]="formulario">
+    <ion-item>
+      <ion-input label="Number input" placeholder="Ingresa el número a convertir" clearInput="true" type="Number" formControlName="number"></ion-input>
+    </ion-item>
+    <ion-button (click)="onSubmit()" expand="block" fill="clear" shape="round" type="submit">
+      Convertir
+    </ion-button>
+    
+  </form>
 </ion-content>

@@ -21,7 +21,7 @@ export class Tab2Page {
     let toInt: number = Number(this.formulario.value.number);
     let converted:string = decimalARomano(toInt);
     const alert = await this.alertController.create({
-      header:'Número convetido',
+      header:'Número convertido',
       message:'El número ingresado en romano es '+converted,
       buttons:['Ok']
     });

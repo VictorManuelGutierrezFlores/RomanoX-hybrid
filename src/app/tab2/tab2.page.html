@@ -1,27 +1,27 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Convertir
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="ion-align-self-center" class="ion-padding">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">Convertir</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-content class="ion-align-self-center">
+    <form [formGroup]="formulario">
+      <ion-item>
+        <ion-input label="Entrada" placeholder="Ingresa el número a convertir" clearInput="true" type="Number" formControlName="number"></ion-input>
+      </ion-item>
+      <ion-button (click)="onSubmit()" expand="block" fill="clear" shape="round" type="submit">
+        Convertir
+      </ion-button>
+    </form>
+  </ion-content>
 
-  <form [formGroup]="formulario">
-    <ion-item>
-      <ion-input label="Number input" placeholder="Ingresa el número a convertir" clearInput="true" type="Number" formControlName="number"></ion-input>
-    </ion-item>
-    <ion-button (click)="onSubmit()" expand="block" fill="clear" shape="round" type="submit">
-      Convertir
-    </ion-button>
-    
-  </form>
 </ion-content>
